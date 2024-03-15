@@ -1,5 +1,5 @@
 {% set name = "apache-flink" %}
-{% set version = "1.18.1" %}
+{% set version = "1.19.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-flink-{{ version }}.tar.gz
-  sha256: 5c9457234fe22e828e1b8faf0d1b0b94c05faee4593972eb73459018a94472c8
+  sha256: 790c4c20e2126955149535b4136015ff84cb0986df5c98d97926f77850890d3c
 
 build:
   skip: true  # [py<37 or win]
