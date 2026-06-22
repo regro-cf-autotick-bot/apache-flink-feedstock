@@ -1,5 +1,5 @@
 {% set name = "apache-flink" %}
-{% set version = "2.1.0" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 7a69e0c8c4a7ed3e9272c7a289bc58dcb555d504594fd947a4fca46186a0421b
+  sha256: 47ded5aea434b4b6db3e010cbd6893afcde3eda36cbb07e0260f868f56d370f7
 
 build:
   skip: true  # [py<37 or py>311 or win]
